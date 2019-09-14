@@ -1,0 +1,10 @@
+<p>home works!</p>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="onemission"
+  >
+<button
+  class="btn btn-primary"
+  (click)="addmission()">addmission</button>
+<p  *ngFor="let list of to_do">{{to_do}}</p>
