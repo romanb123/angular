@@ -1,12 +1,11 @@
 
-<div class="container">
-<div class="row">
-   <div class="card col-lg-3" style="width:400px" *ngFor="let mission of todo" >
-    <div class="card-body">
-      <h4 class="card-title">{{mission.title}}</h4>
-      <p class="card-text">{{mission.mission}}</p>
+  <app-onemission *ngFor="let mission of mission" [mission]="mission"></app-onemission>
 
-    </div>
-  </div>
-</div>
-</div>
+  
+  <!-- <app-onemission 
+  *ngFor="let todo of todos" 
+  [todo]="todo"
+  >
+</app-onemission> -->
+ 
+
