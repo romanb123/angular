@@ -1,10 +1,12 @@
-<p>home works!</p>
-<input
-  type="text"
-  class="form-control"
-  [(ngModel)]="onemission"
-  >
-<button
-  class="btn btn-primary"
-  (click)="addmission()">addmission</button>
-<p  *ngFor="let list of to_do">{{to_do}}</p>
+
+<div class="container">
+<div class="row">
+   <div class="card col-lg-3" style="width:400px" *ngFor="let mission of todo" >
+    <div class="card-body">
+      <h4 class="card-title">{{mission.title}}</h4>
+      <p class="card-text">{{mission.mission}}</p>
+
+    </div>
+  </div>
+</div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Todo} from '../modules/todo.model'
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  to_do=[];
+  todo:Todo[]=[
+new Todo('title','mission')
+  ];
 onemission='';
 gg="ffffff";
   constructor() { }
@@ -14,8 +17,7 @@ gg="ffffff";
   ngOnInit() {
   }
   addmission(){
-this.to_do.push(this.onemission);
-console.log(this.to_do);
+
   };
 
 }
